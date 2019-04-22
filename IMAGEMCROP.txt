@@ -1,0 +1,1 @@
+ffmpeg -i video.mp4 -f mpegts -vcodec mpeg1video -s 960x540 -b:v 1000k -r 30 -bf 0 -codec:a mp2 -ar 44100 -ac 1 -b:a 128k video.ts
